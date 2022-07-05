@@ -531,6 +531,16 @@ img {
   z-index: 200;
   margin-left: 11%;
 }
+.titleThree {
+  color: #000;
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  z-index: 200;
+  margin-left: 11%;
+}
 
 @media screen and (max-width: 800px) {
   .title {
@@ -540,6 +550,13 @@ img {
   .titleTwo {
     margin-left: 40px;
     top: 35%;
+  }
+  .titleThree {
+    margin-left: 40px;
+    top: 35%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
   }
 }
 
@@ -587,6 +604,7 @@ img {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
 }
+
 @media screen and (max-width: 800px) {
   .title__text {
     font-size: 4.6rem;
@@ -604,6 +622,17 @@ img {
   }
   .title__textTwo {
     font-size: 2.6rem;
+  }
+}
+@media screen and (max-height: 520px) {
+  .title__textFour {
+    font-size: 4.5rem;
+    margin-top: 70px;
+    
+  }
+  .title__textTwo {
+    font-size: 10rem;
+    margin-top: 30px;
   }
 }
 
@@ -909,9 +938,13 @@ img {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
   .heading {
     font-size: 2.4rem;
+    padding-top: 0.2rem;
+  }
+  .headingTwo {
+    font-size: 2rem;
     padding-top: 0.2rem;
   }
 }
@@ -940,13 +973,13 @@ img {
   margin: auto;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
   .heading-num:after {
     width: 2.4rem;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
   .heading-num {
     padding-left: 3.2rem;
     font-size: 2.4rem;
@@ -1416,6 +1449,12 @@ header .global-nav__list li:first-child {
     margin-top: 3.2rem;
   }
 }
+@media screen and (max-height: 520px) {
+  header .global-nav__list li {
+    padding: 0;
+    margin-top: 2.2rem;
+  }
+}
 
 header .global-nav__list a {
   display: inline-block;
@@ -1696,6 +1735,12 @@ header .global-nav__sns a:last-child {
     text-shadow: 0 4px 6px rgba(2, 11, 22, 0.2);
   }
 }
+@media screen and (max-height: 520px) {
+  .moon__text {
+    font-size: 4.4rem;
+    text-shadow: 0 4px 6px rgba(2, 11, 22, 0.2);
+  }
+}
 
 .moon__text-wrap {
   position: absolute;
@@ -1815,12 +1860,24 @@ header .global-nav__sns a:last-child {
   background-size: cover;
 }
 .image--project--2 {
-  background: url(../img/background/cursos.png) no-repeat;
+  background: url(../img/background/cursos2.png) no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 450px) {
+  .image--project--2 {
+  background: url(../img/background/cursos2.png) no-repeat;
+  background-size: cover;
+}
 }
 .image--about {
   background: url(../img/imgAbout/AboutMe.png) no-repeat center;
   background-size: cover;
+}
+@media screen and (max-width: 450px) {
+  .image--about {
+  background: url(../img/imgAbout/AboutMe2.png) no-repeat center;
+  background-size: cover;
+}
 }
 
 .image--contact {
