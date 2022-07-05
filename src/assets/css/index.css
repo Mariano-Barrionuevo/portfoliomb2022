@@ -1495,6 +1495,12 @@ header .global-nav__list a {
     text-shadow: 0 3px 20px rgba(2, 11, 22, 0.2);
   }
 }
+@media screen and (max-height: 520px) {
+  header .global-nav__list li a {
+    font-size: 5rem;
+    text-shadow: 0 3px 20px rgba(2, 11, 22, 0.2);
+  }
+}
 
 header .global-nav__sns {
   display: none;
