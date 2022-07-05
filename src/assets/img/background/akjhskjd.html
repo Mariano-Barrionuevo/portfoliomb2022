@@ -1,0 +1,50 @@
+<body class="fp-viewing-0" style="overflow: hidden; height: 100%; scroll-behavior: unset;">
+
+    <a href="https://github.com/alvarotrigo/fullPage.js" id="githubLink"><img
+            style="position: fixed;z-index:99; top: 0; right: 0; border: 0;"
+            src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+
+
+
+    <div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; top: 0px;">
+        <div class="section fp-section active fp-completely" id="section0" data-fp-styles="null"
+            style="height: 1183px;">
+            <h1>fullPage.js</h1>
+        </div>
+        <div class="section fp-section" id="section1" data-fp-styles="null" style="height: 1183px;">
+            <div class="fp-slides">
+                <div class="fp-slidesContainer" style="width: 200%;">
+                    <div class="slide fp-slide active" id="slide1" style="width: 50%;">
+                        <h1>Slide Backgrounds</h1>
+                    </div>
+                    <div class="slide fp-slide" id="slide2" style="width: 50%;">
+                        <h1>Totally customizable</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="fp-controlArrow fp-prev"></div>
+            <div class="fp-controlArrow fp-next"></div>
+
+        </div>
+        <div class="section fp-section" id="section2" data-fp-styles="null" style="height: 1183px;">
+            <h1>Lovely images <br>for a lovely page</h1>
+        </div>
+        <div class="section fp-section" id="section3" data-fp-styles="null" style="height: 1183px;">
+            <h1>One Image = One thousand words</h1>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../dist/fullpage.js"></script>
+    <script type="text/javascript" src="examples.js"></script>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            verticalCentered: false,
+
+            //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+            css3: false
+        });
+    </script>
+
+</body>
